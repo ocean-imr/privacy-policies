@@ -79,7 +79,12 @@
                         </ul>
                     </li>
                 </ul>
-                <p><strong>Important:</strong> If the cloud icon is <strong>green</strong>, the app is connected to the backend.</p>
+                <p><strong>Cloud Status Indicator:</strong></p>
+                <ul>
+                    <li>🟢 <strong>Green</strong> – Connected to backend (ready to sync)</li>
+                    <li>🟡 <strong>Yellow</strong> – Connecting or syncing in progress</li>
+                    <li>🔴 <strong>Red</strong> – Not connected (offline mode)</li>
+                </ul>
             </div>
             <div class="flex-image">
                 <img src="images/guide/settings.png" alt="Settings Menu" class="screenshot">
@@ -105,7 +110,7 @@
                 </ul>
             </div>
             <div class="flex-image">
-                <img src="images/guide/pipe-info.png" alt="Pipe Information" class="screenshot">
+                <img src="images/guide/pipe-info-data.png" alt="Pipe Information" class="screenshot">
             </div>
         </div>
 
@@ -187,11 +192,7 @@
                     <li>Press <strong>"Complete Tally"</strong></li>
                     <li>Confirm the action</li>
                 </ol>
-                <p><strong>Status meaning:</strong></p>
-                <ul>
-                    <li>🟢 Green = Connected to backend</li>
-                    <li>🔴 Not connected = Data may not be saved or updated</li>
-                </ul>
+                <p><strong>Important:</strong> Ensure the cloud status is <strong>green</strong> before completing to guarantee data is saved to the backend.</p>
             </div>
             <div class="flex-image">
                 <img src="images/guide/complete-tally.png" alt="Complete Tally" class="screenshot">
@@ -202,15 +203,18 @@
 
         <h2>8. Best Practices</h2>
         <ul>
-            <li>Ensure sync is <strong>green</strong> before:
+            <li>Ensure cloud status is <strong>green</strong> before:
                 <ul>
                     <li>Accessing data sheets</li>
-                    <li>Expecting data to be saved</li>
+                    <li>Completing tallies</li>
+                    <li>Expecting data to be saved to backend</li>
                 </ul>
             </li>
+            <li>If cloud is <strong>yellow</strong>, wait for sync to complete</li>
+            <li>If cloud is <strong>red</strong>, check your internet connection and sync settings</li>
             <li>Verify all rows before completing a tally</li>
             <li>Use <strong>Set Joint</strong> to correct mistakes</li>
-            <li>A tally cannot be completed until required data is valid</li>
+            <li>A tally cannot be completed until all required data is valid</li>
         </ul>
 
         <hr>
