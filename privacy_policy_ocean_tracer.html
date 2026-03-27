@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - OceanIMR Offshore Pipe Tracer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header: Full Width -->
+    <img src="images/public/header.png" alt="Header">
+
+    <!-- Content: Constrained Width -->
+    <div class="content-wrapper">
+        <h1>Privacy Policy – OceanIMR Offshore Pipe Tracer</h1>
+        
+        <p>
+            <strong>Application:</strong> OceanIMR Offshore Pipe Tracer<br>
+            <strong>Package:</strong> <code>com.oceanimr.pipes</code><br>
+            <strong>Last updated:</strong> 13 March 2026
+        </p>
+
+        <p>
+            OceanIMR ("we", "us", or "our") operates the <em>OceanIMR Offshore Pipe Tracer</em> mobile application (the "App"). 
+            This Privacy Policy explains what information we collect, how we use it, with whom we share it, and what rights you 
+            have in relation to that information. By using the App you agree to the practices described below.
+        </p>
+
+        <hr>
+
+        <h2>1. Who This App Is For</h2>
+        <p>
+            The App is a business-to-business (B2B) tool provided exclusively to authorised employees and contractors of companies 
+            that have a commercial agreement with OceanIMR. It is not intended for, and should not be used by, members of the 
+            general public or minors under the age of 18.
+        </p>
+
+        <hr>
+
+        <h2>2. Information We Collect</h2>
+
+        <h3>2.1 Account & Identity Information</h3>
+        <ul>
+            <li><strong>Email address</strong> – collected at login via Microsoft Azure B2C and used as your primary identifier throughout the App.</li>
+            <li><strong>Authentication tokens</strong> – OAuth 2.0 / OpenID Connect tokens issued by Azure B2C are stored securely on your device and are used solely to authenticate API requests.</li>
+        </ul>
+
+        <h3>2.2 Operational & Transaction Data</h3>
+        <ul>
+            <li>Records of pipe/equipment transactions you initiate (receive, relocate, etc.), including the date, time, transaction type, your email address, and the location and asset identifiers involved.</li>
+            <li>Pipe and equipment details (serial numbers, RFID tags, specifications, inspection measurements) that you scan or enter into the App.</li>
+            <li>Delivery ticket and tally information associated with your work sessions.</li>
+        </ul>
+
+        <h3>2.3 Device Information</h3>
+        <ul>
+            <li>Device model, operating system version, and a device identifier are collected via the device info library to differentiate physical devices from emulators and to support offline session management.</li>
+            <li>Network connectivity status is checked to determine whether to operate in online or offline mode.</li>
+        </ul>
+
+        <h3>2.4 Information We Do <em>Not</em> Collect</h3>
+        <ul>
+            <li>Precise GPS location or real-time location tracking.</li>
+            <li>Contacts, photos, microphone, or camera data (the App uses a barcode scanner but does not retain images).</li>
+            <li>Financial, health, or sensitive personal information.</li>
+            <li>Advertising identifiers or behavioural analytics data.</li>
+        </ul>
+
+        <hr>
+
+        <h2>3. How We Use Your Information</h2>
+        <ul>
+            <li>To authenticate you and authorise access to company resources.</li>
+            <li>To use your <strong>email address</strong> as the user identifier when creating pipe/equipment transactions, ensuring a complete audit trail of who performed each operation.</li>
+            <li>To record and synchronise pipe/equipment transactions to the backend database on behalf of your employer.</li>
+            <li>To support offline-first functionality by caching operational data locally on your device.</li>
+            <li>To generate Excel exports and PDF datasheets that you request within the App.</li>
+            <li>To maintain audit trails required by offshore logistics operations.</li>
+        </ul>
+
+        <p>
+            <strong>Important:</strong> All data you access and create through the App is restricted to your employer's company data. 
+            You cannot view or modify data belonging to other companies using the App.
+        </p>
+
+        <p>
+            We do not use your information for advertising, profiling, or any purpose unrelated to the operational function of the App.
+        </p>
+
+        <hr>
+
+        <h2>4. Data Storage & Retention</h2>
+
+        <h3>4.1 On-Device Storage</h3>
+        <p>
+            A local SQLite database stores a working copy of operational data (items, serials, bundles, transactions, tallies) to enable 
+            offline use. This includes your <strong>email address</strong>, which is stored to associate transactions with your user account 
+            and to enable offline transaction creation. This data is protected through Android's secure storage APIs. It is retained on your 
+            device until you uninstall the App or your employer revokes access.
+        </p>
+
+        <h3>4.2 Cloud Storage</h3>
+        <p>
+            Synchronised data, including your <strong>email address</strong>, is transmitted over HTTPS to a backend hosted on 
+            <strong>Microsoft Azure</strong> (Norway East region) and stored in a PostgreSQL database. Your email address is stored as part 
+            of transaction records to maintain audit trails. PDF datasheets are stored in Azure Blob Storage with time-limited, signed access URLs.
+        </p>
+
+        <h3>4.3 Retention Period</h3>
+        <p>
+            Data is retained for as long as required by your employer's operational and regulatory obligations. When your account is 
+            deprovisioned by your employer, data associated with your account will be anonymised or deleted in accordance with our 
+            agreement with that employer.
+        </p>
+
+        <hr>
+
+        <h2>5. Data Sharing & Disclosure</h2>
+        <p>We share data only in the following circumstances:</p>
+
+        <ul>
+            <li><strong>With your employer / the contracting company.</strong> All operational data you enter is company data accessible to authorised personnel within your organisation.</li>
+            <li><strong>With Microsoft Azure.</strong> Authentication, database hosting, secret management, and blob storage services are provided by Microsoft, acting as a data processor under a Data Processing Agreement. See <a href="https://privacy.microsoft.com/en-us/privacystatement">Microsoft's Privacy Statement</a>.</li>
+            <li><strong>Legal requirements.</strong> We may disclose information if required by law, court order, or to protect the rights and safety of OceanIMR, its clients, or the public.</li>
+        </ul>
+
+        <p>
+            We do not sell, rent, or share your personal data with any advertising networks or unaffiliated third parties.
+        </p>
+
+        <hr>
+
+        <h2>6. Your Rights (GDPR & UK Data Protection)</h2>
+        <p>
+            If you are in the European Economic Area or the United Kingdom, you have the right to:
+        </p>
+
+        <ul>
+            <li><strong>Access</strong> – request a copy of your personal data that we hold.</li>
+            <li><strong>Rectification</strong> – request corrections to inaccurate or incomplete data.</li>
+            <li><strong>Erasure</strong> – request deletion of your data in certain circumstances (subject to operational and legal retention requirements).</li>
+            <li><strong>Restriction</strong> – request that we limit the processing of your data in certain situations.</li>
+            <li><strong>Portability</strong> – receive your data in a structured, commonly used, machine-readable format.</li>
+            <li><strong>Object</strong> – object to certain processing of your data.</li>
+        </ul>
+
+        <p>
+            To exercise any of these rights, please contact us (see Section 10 below). Note that because this App is used within a B2B 
+            context, your employer may also be the data controller. We will coordinate with your employer to respond to your request.
+        </p>
+
+        <hr>
+
+        <h2>7. Security</h2>
+        <p>
+            We take reasonable administrative, technical, and physical measures to protect your information against unauthorised access, 
+            loss, or alteration. This includes:
+        </p>
+
+        <ul>
+            <li>Encryption of data in transit using HTTPS.</li>
+            <li>Secure authentication via Microsoft Azure B2C with OAuth 2.0 and OpenID Connect.</li>
+            <li>Access controls limiting data access to authorised personnel only.</li>
+            <li>Regular security reviews and updates.</li>
+        </ul>
+
+        <p>
+            However, no system is completely secure. We cannot guarantee the absolute security of any information transmitted to or stored by us.
+        </p>
+
+        <hr>
+
+        <h2>8. Children's Privacy</h2>
+        <p>
+            The App is not intended for use by anyone under the age of 18. We do not knowingly collect personal information from minors.
+        </p>
+
+        <hr>
+
+        <h2>9. Changes to This Privacy Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. When we make 
+            material changes, we will update the "Last updated" date at the top of this document. Your continued use of the App after 
+            changes are posted constitutes your acceptance of the updated policy.
+        </p>
+
+        <hr>
+
+        <h2>10. Contact Us</h2>
+        <p>
+            If you have questions or requests regarding this Privacy Policy or our data practices, please contact:
+        </p>
+        <p>
+            <strong>OceanIMR AS</strong><br>
+            Email: <a href="mailto:it@oceanimr.com">it@oceanimr.com</a>
+        </p>
+
+        <hr>
+    </div>
+
+    <!-- Footer: Full Width -->
+    <img src="images/public/footer.png" alt="Footer">
+</body>
+</html>

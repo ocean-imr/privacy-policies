@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Tracer - User Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header: Full Width -->
+    <img src="images/public/header.png" alt="Header">
+
+    <!-- Content: Constrained Width -->
+    <div class="content-wrapper">
+        <h1>Ocean Tracer – User Guide</h1>
+
+        <hr>
+
+        <h2>1. Overview</h2>
+        <p>This app allows you to:</p>
+        <ul>
+            <li>Scan and manage pipe data</li>
+            <li>Create structured tallies</li>
+            <li>Sync data with the cloud backend</li>
+        </ul>
+
+        <hr>
+
+        <h2>2. Getting Started</h2>
+
+        <h3>Login</h3>
+        <div class="flex-container">
+            <div class="flex-text">
+                <p>When opening the app, you must log in using your company account via Microsoft Entra ID.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Open the app</li>
+                    <li>Sign in with your company credentials</li>
+                    <li>Complete authentication</li>
+                </ol>
+            </div>
+            <div class="flex-image">
+                <img src="images/guide/login.png" alt="Login Page" class="screenshot">
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>3. Home Screen</h2>
+        <div class="flex-container">
+            <div class="flex-text">
+                <p>After login, you will land on the main screen.</p>
+                <p><strong>Available options:</strong></p>
+                <ul>
+                    <li><strong>Tally</strong> – Create and manage tallies</li>
+                    <li><strong>Pipe Information</strong> – View pipe data</li>
+                    <li><strong>Settings</strong> – App configuration</li>
+                </ul>
+            </div>
+            <div class="flex-image">
+                <img src="images/guide/homepage.png" alt="Homepage" class="screenshot">
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>4. Settings</h2>
+        <div class="flex-container">
+            <div class="flex-text">
+                <p>Open settings from the top corner.</p>
+                <p><strong>Options:</strong></p>
+                <ul>
+                    <li><strong>Language</strong> – Switch between English and Norwegian</li>
+                    <li><strong>Sync</strong> – Connects to the backend and enables:
+                        <ul>
+                            <li>Data upload</li>
+                            <li>Data retrieval</li>
+                            <li>Access to pipe documentation</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><strong>Important:</strong> If the cloud icon is <strong>green</strong>, the app is connected to the backend.</p>
+            </div>
+            <div class="flex-image">
+                <img src="images/guide/settings.png" alt="Settings Menu" class="screenshot">
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>5. Pipe Information</h2>
+        <div class="flex-container">
+            <div class="flex-text">
+                <p>Use this section to retrieve detailed pipe data.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Open <strong>Pipe Information</strong></li>
+                    <li>Scan or manually enter a pipe</li>
+                    <li>View available data</li>
+                </ol>
+                <p><strong>Data Sheet:</strong></p>
+                <ul>
+                    <li>Press <strong>"Data Sheet"</strong> to open full documentation</li>
+                    <li>Requires active sync (connection must be green)</li>
+                </ul>
+            </div>
+            <div class="flex-image">
+                <img src="images/guide/pipe-info.png" alt="Pipe Information" class="screenshot">
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>6. Tally (Main Function)</h2>
+        <p>This is the primary workflow of the app.</p>
+
+        <h3>6.1 Create a Tally</h3>
+        <div class="flex-container">
+            <div class="flex-text">
+                <ol>
+                    <li>Press <strong>Tally</strong></li>
+                    <li>Enter:
+                        <ul>
+                            <li>Booking reference</li>
+                            <li>First row amount</li>
+                        </ul>
+                    </li>
+                    <li>Confirm to create the tally</li>
+                </ol>
+            </div>
+            <div class="flex-image">
+                <img src="images/guide/tally-input.png" alt="Tally Input" class="screenshot">
+            </div>
+        </div>
+
+        <h3>6.2 Add Pipes to a Row</h3>
+        <ul>
+            <li>Scan pipes to fill the row</li>
+            <li>Continue until the row is complete</li>
+        </ul>
+
+        <h3>6.3 Add a New Row</h3>
+        <p>After completing a row:</p>
+        <ol>
+            <li>Add a new row</li>
+            <li>Set the required row length</li>
+        </ol>
+
+        <h3>6.4 Fix Missing or Incorrect Input</h3>
+        <div class="flex-container">
+            <div class="flex-text">
+                <p>If a pipe is missing or misplaced:</p>
+                <ul>
+                    <li>Press <strong>"Set Joint"</strong></li>
+                    <li>Scan the pipe into the correct position</li>
+                </ul>
+            </div>
+            <div class="flex-image">
+                <img src="images/guide/set-joint.png" alt="Set Joint" class="screenshot">
+            </div>
+        </div>
+
+        <h3>6.5 Edit Pipe Data</h3>
+        <div class="flex-container">
+            <div class="flex-text">
+                <p>To change information about a scanned pipe:</p>
+                <ol>
+                    <li>Select the pipe in the tally</li>
+                    <li>Press <strong>"Edit Pipe"</strong></li>
+                    <li>Update the required fields</li>
+                    <li>Save changes</li>
+                </ol>
+            </div>
+            <div class="flex-image">
+                <img src="images/guide/edit-pipe.png" alt="Edit Pipe" class="screenshot">
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>7. Complete Tally</h2>
+        <div class="flex-container">
+            <div class="flex-text">
+                <p>When all pipes are scanned and rows are filled:</p>
+                <ol>
+                    <li>Review the tally for completeness</li>
+                    <li>Press <strong>"Complete Tally"</strong></li>
+                    <li>Confirm the action</li>
+                </ol>
+                <p><strong>Status meaning:</strong></p>
+                <ul>
+                    <li>🟢 Green = Connected to backend</li>
+                    <li>🔴 Not connected = Data may not be saved or updated</li>
+                </ul>
+            </div>
+            <div class="flex-image">
+                <img src="images/guide/complete-tally.png" alt="Complete Tally" class="screenshot">
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>8. Best Practices</h2>
+        <ul>
+            <li>Ensure sync is <strong>green</strong> before:
+                <ul>
+                    <li>Accessing data sheets</li>
+                    <li>Expecting data to be saved</li>
+                </ul>
+            </li>
+            <li>Verify all rows before completing a tally</li>
+            <li>Use <strong>Set Joint</strong> to correct mistakes</li>
+            <li>A tally cannot be completed until required data is valid</li>
+        </ul>
+
+        <hr>
+    </div>
+
+    <!-- Footer: Full Width -->
+    <img src="images/public/footer.png" alt="Footer">
+</body>
+</html>

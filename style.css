@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header and Footer - Full Width */
+img[alt="Header"],
+img[alt="Footer"] {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Content Container - Constrained Width */
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 80px;
+}
+
+/* Typography */
+h1 {
+    color: #1C355E;
+    border-bottom: 3px solid #1C355E;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #1C355E;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #2C4A6E;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Inline Code */
+code {
+    background-color: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: "Courier New", monospace;
+    font-size: 0.95em;
+}
+
+/* Links */
+a {
+    color: #1C355E;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Horizontal Rules */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 30px 0;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.screenshot {
+    max-height: 400px;
+    object-fit: contain;
+}
+
+/* Flex Layout for Text + Image */
+.flex-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.flex-text {
+    flex: 1;
+}
+
+.flex-image {
+    flex: 0 0 300px;
+}
+
+/* Print Styles */
+@media print {
+    html, body {
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+    }
+    
+    .content-wrapper {
+        padding: 20px 80px;
+        margin: 0 auto;
+    }
+    
+    img[alt="Header"] {
+        margin-bottom: 20px;
+        page-break-after: avoid;
+    }
+    
+    img[alt="Footer"] {
+        margin-top: 30px;
+        margin-bottom: 0;
+        page-break-before: avoid;
+        page-break-after: avoid;
+        page-break-inside: avoid;
+        display: block;
+    }
+    
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    
+    .flex-container {
+        page-break-inside: avoid;
+    }
+    
+    /* Ensure no blank pages after footer */
+    @page {
+        margin: 0;
+        size: auto;
+    }
+    
+    /* Last page should end at footer */
+    body::after {
+        content: none;
+    }
+}
+
+
+h1 {
+    color: #1C355E;
+    border-bottom: 2px solid #1C355E;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #1C355E;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #2C4A6E;
+}
+
+code {
+    background-color: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: "Courier New", monospace;
+}
+
+a {
+    color: #1C355E;
+}
+
+@media print {
+    body {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    img[alt="Header"] {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    img[alt="Footer"] {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        page-break-before: auto;
+    }
+}
