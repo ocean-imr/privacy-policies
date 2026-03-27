@@ -1,7 +1,9 @@
+![Header](images/public/header.png)
+
 # Privacy Policy – OceanIMR Offshore Pipe Tracer
 
-**Application:** OceanIMR Offshore Pipe Tracer
-**Package:** `com.oceanimr.pipes`
+**Application:** OceanIMR Offshore Pipe Tracer  
+**Package:** `com.oceanimr.pipes`  
 **Last updated:** 13 March 2026
 
 OceanIMR ("we", "us", or "our") operates the *OceanIMR Offshore Pipe Tracer* mobile application (the "App"). This Privacy Policy explains what information we collect, how we use it, with whom we share it, and what rights you have in relation to that information. By using the App you agree to the practices described below.
@@ -135,4 +137,8 @@ If you have questions or requests regarding this Privacy Policy or our data prac
 
 **OceanIMR AS**
 Email: [it@oceanimr.com](mailto:it@oceanimr.com)
+
+---
+
+![Footer](images/public/footer.png)
  

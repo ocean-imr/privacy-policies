@@ -1,3 +1,5 @@
+![Header](images/public/header.png)
+
 # Ocean Tracer – User Guide
 
 ---
@@ -26,7 +28,7 @@ When opening the app, you must log in using your company account via Microsoft E
 3. Complete authentication
 
 </div>
-<img src="images/login.png" alt="Login Page" height="400" style="margin-left: 20px; max-width: 300px; object-fit: contain;">
+<img src="images/guide/login.png" alt="Login Page" height="400" style="margin-left: 20px; max-width: 300px; object-fit: contain;">
 </div>
 
 <br>
@@ -47,7 +49,7 @@ After login, you will land on the main screen.
 - **Settings** – App configuration
 
 </div>
-<img src="images/homepage.png" alt="Homepage" height="400" style="margin-left: 20px; max-width: 300px; object-fit: contain;">
+<img src="images/guide/homepage.png" alt="Homepage" height="400" style="margin-left: 20px; max-width: 300px; object-fit: contain;">
 </div>
 
 <br>
@@ -76,7 +78,7 @@ Open settings from the top corner.
 If the cloud icon is **green**, the app is connected to the backend.
 
 </div>
-<img src="images/settings.png" alt="Settings Menu" height="400" style="margin-left: 20px; max-width: 300px; object-fit: contain;">
+<img src="images/guide/settings.png" alt="Settings Menu" height="400" style="margin-left: 20px; max-width: 300px; object-fit: contain;">
 </div>
 
 <br>
@@ -101,7 +103,7 @@ Use this section to retrieve detailed pipe data.
 - Requires active sync (connection must be green)
 
 </div>
-<img src="images/pipe-info.png" alt="Pipe Information" height="400" style="margin-left: 20px; max-width: 300px; object-fit: contain;">
+<img src="images/guide/pipe-info.png" alt="Pipe Information" height="400" style="margin-left: 20px; max-width: 300px; object-fit: contain;">
 </div>
 
 <br>
@@ -127,7 +129,7 @@ This is the primary workflow of the app.
 3. Confirm to create the tally
 
 </div>
-<img src="images/tally-input.png" alt="Tally Input" height="400" style="margin-left: 20px; max-width: 300px; object-fit: contain;">
+<img src="images/guide/tally-input.png" alt="Tally Input" height="400" style="margin-left: 20px; max-width: 300px; object-fit: contain;">
 </div>
 
 <br>
@@ -166,7 +168,7 @@ If a pipe is missing or misplaced:
 - Scan the pipe into the correct position
 
 </div>
-<img src="images/set-joint.png" alt="Set Joint" height="400" style="margin-left: 20px; max-width: 300px; object-fit: contain;">
+<img src="images/guide/set-joint.png" alt="Set Joint" height="400" style="margin-left: 20px; max-width: 300px; object-fit: contain;">
 </div>
 
 <br>
@@ -205,7 +207,7 @@ Use the row header to:
 - Edit data or add comments
 
 </div>
-<img src="images/edit-pipe.png" alt="Edit Pipe" height="400" style="margin-left: 20px; max-width: 300px; object-fit: contain;">
+<img src="images/guide/edit-pipe.png" alt="Edit Pipe" height="400" style="margin-left: 20px; max-width: 300px; object-fit: contain;">
 </div>
 
 <br>
@@ -222,7 +224,7 @@ Use the row header to:
 2. An Excel report is generated
 
 </div>
-<img src="images/complete-tally.png" alt="Complete Tally" height="400" style="margin-left: 20px; max-width: 300px; object-fit: contain;">
+<img src="images/guide/complete-tally.png" alt="Complete Tally" height="400" style="margin-left: 20px; max-width: 300px; object-fit: contain;">
 </div>
 
 <br>
@@ -248,6 +250,10 @@ Sync status is visible:
 - Ensure sync is **green** before:
   - Accessing data sheets  
   - Expecting data to be saved  
-- Verify all rows before completing a tally  
-- Use **Set Joint** to correct mistakes  
-- A tally cannot be completed until required data is valid  
+- Verify all rows before completing a tally
+- Use **Set Joint** to correct mistakes
+- A tally cannot be completed until required data is valid
+
+---
+
+![Footer](images/public/footer.png)
