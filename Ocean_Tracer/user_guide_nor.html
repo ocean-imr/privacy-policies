@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Tracer - Brukerveiledning</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Header: Full Width -->
+    <img src="../public/header.png" alt="Header">
+
+    <!-- Content: Constrained Width -->
+    <div class="content-wrapper">
+        <h1>Ocean Tracer – Brukerveiledning</h1>
+
+        <hr>
+
+        <h2>1. Oversikt</h2>
+        <p>Denne appen lar deg:</p>
+        <ul>
+            <li>Skanne og administrere rørinformasjon</li>
+            <li>Opprette strukturerte tallier</li>
+            <li>Synkronisere data med skybackend</li>
+        </ul>
+
+        <hr>
+
+        <h2>2. Kom i gang</h2>
+
+        <h3>Innlogging</h3>
+        <div class="flex-container">
+            <div class="flex-text">
+                <p>Når du åpner appen, må du logge inn med din bedriftskonto via Microsoft Entra ID.</p>
+                <p><strong>Trinn:</strong></p>
+                <ol>
+                    <li>Åpne appen</li>
+                    <li>Logg inn med dine bedriftsopplysninger</li>
+                    <li>Fullfør autentisering</li>
+                </ol>
+            </div>
+            <div class="flex-image">
+                <img src="images/nor/login.png" alt="Innloggingsside" class="screenshot">
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>3. Hjemmeskjerm</h2>
+        <div class="flex-container">
+            <div class="flex-text">
+                <p>Etter innlogging kommer du til hovedskjermen.</p>
+                <p><strong>Tilgjengelige alternativer:</strong></p>
+                <ul>
+                    <li><strong>Tally</strong> – Opprett og administrer tallier</li>
+                    <li><strong>Rørinformasjon</strong> – Vis rørdata</li>
+                    <li><strong>Innstillinger</strong> – Appkonfigurasjon</li>
+                </ul>
+            </div>
+            <div class="flex-image">
+                <img src="images/nor/homepage.png" alt="Hjemmeside" class="screenshot">
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>4. Innstillinger</h2>
+        <div class="flex-container">
+            <div class="flex-text">
+                <p>Åpne innstillinger fra øverste hjørne.</p>
+                <p><strong>Alternativer:</strong></p>
+                <ul>
+                    <li><strong>Språk</strong> – Bytt mellom engelsk og norsk</li>
+                    <li><strong>Synkroniser</strong> – Kobler til backend og aktiverer:
+                        <ul>
+                            <li>Dataopplasting</li>
+                            <li>Datahenting</li>
+                            <li>Tilgang til rørdokumentasjon</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><strong>Skystatusindikator:</strong></p>
+                <ul>
+                    <li>🟢 <strong>Grønn</strong> – Tilkoblet backend (klar til å synkronisere)</li>
+                    <li>🟡 <strong>Gul</strong> – Kobler til eller synkronisering pågår</li>
+                    <li>🔴 <strong>Rød</strong> – Ikke tilkoblet (frakoblet modus)</li>
+                </ul>
+            </div>
+            <div class="flex-image">
+                <img src="images/nor/settings.png" alt="Innstillingsmeny" class="screenshot">
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>5. Rørinformasjon</h2>
+        <div class="flex-container">
+            <div class="flex-text">
+                <p>Bruk denne seksjonen til å hente detaljert rørdata.</p>
+                <p><strong>Trinn:</strong></p>
+                <ol>
+                    <li>Åpne <strong>Rørinformasjon</strong></li>
+                    <li>Skann eller skriv inn et rør manuelt</li>
+                    <li>Vis tilgjengelige data</li>
+                </ol>
+                <p><strong>Datablad:</strong></p>
+                <ul>
+                    <li>Trykk <strong>"Datablad"</strong> for å åpne full dokumentasjon</li>
+                    <li>Krever aktiv synkronisering (tilkobling må være grønn)</li>
+                </ul>
+            </div>
+            <div class="flex-image">
+                <img src="images/nor/pipe-info-data.png" alt="Rørinformasjon" class="screenshot">
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>6. Tally (Hovedfunksjon)</h2>
+        <p>Dette er den primære arbeidsflyten i appen.</p>
+
+        <h3>6.1 Opprett en Tally</h3>
+        <div class="flex-container">
+            <div class="flex-text">
+                <ol>
+                    <li>Trykk <strong>Tally</strong></li>
+                    <li>Skriv inn:
+                        <ul>
+                            <li>Bestillingsreferanse</li>
+                            <li>Første rad antall</li>
+                        </ul>
+                    </li>
+                    <li>Bekreft for å opprette tallyen</li>
+                </ol>
+            </div>
+            <div class="flex-image">
+                <img src="images/nor/tally-input.png" alt="Tally-inndata" class="screenshot">
+            </div>
+        </div>
+
+        <h3>6.2 Legg til rør i en rad</h3>
+        <ul>
+            <li>Skann rør for å fylle raden</li>
+            <li>Fortsett til raden er fullstendig</li>
+        </ul>
+
+        <h3>6.3 Legg til en ny rad</h3>
+        <p>Etter fullføring av en rad:</p>
+        <ol>
+            <li>Legg til en ny rad</li>
+            <li>Angi ønsket radlengde</li>
+        </ol>
+
+        <h3>6.4 Fiks manglende eller feil inndata</h3>
+        <div class="flex-container">
+            <div class="flex-text">
+                <p>Hvis et rør mangler eller er feilplassert:</p>
+                <ul>
+                    <li>Trykk <strong>"Sett Joint"</strong></li>
+                    <li>Skann røret inn i riktig posisjon</li>
+                </ul>
+            </div>
+            <div class="flex-image">
+                <img src="images/nor/pipe-info-empty.png" alt="Sett Joint" class="screenshot">
+            </div>
+        </div>
+
+        <h3>6.5 Rediger rørdata</h3>
+        <div class="flex-container">
+            <div class="flex-text">
+                <p>For å endre informasjon om et skannet rør:</p>
+                <ol>
+                    <li>Velg røret i tallyen</li>
+                    <li>Trykk <strong>"Rediger rør"</strong></li>
+                    <li>Oppdater de nødvendige feltene</li>
+                    <li>Lagre endringer</li>
+                </ol>
+            </div>
+            <div class="flex-image">
+                <img src="images/nor/pipe-info-data.png" alt="Rediger rør" class="screenshot">
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>7. Fullfør Tally</h2>
+        <div class="flex-container">
+            <div class="flex-text">
+                <p>Når alle rør er skannet og radene er fylt:</p>
+                <ol>
+                    <li>Gjennomgå tallyen for fullstendighet</li>
+                    <li>Trykk <strong>"Fullfør Tally"</strong></li>
+                    <li>Bekreft handlingen</li>
+                </ol>
+                <p><strong>Viktig:</strong> Sørg for at skystatusen er <strong>grønn</strong> før fullføring for å garantere at data lagres på backend.</p>
+            </div>
+            <div class="flex-image">
+                <img src="images/nor/complete-tally.png" alt="Fullfør Tally" class="screenshot">
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>8. Beste praksis</h2>
+        <ul>
+            <li>Sørg for at skystatus er <strong>grønn</strong> før:
+                <ul>
+                    <li>Tilgang til datablader</li>
+                    <li>Fullføring av tallier</li>
+                    <li>Forventning om at data lagres på backend</li>
+                </ul>
+            </li>
+            <li>Hvis skyen er <strong>gul</strong>, vent på at synkroniseringen fullføres</li>
+            <li>Hvis skyen er <strong>rød</strong>, sjekk internettforbindelsen og synkroniseringsinnstillingene</li>
+            <li>Bekreft alle rader før fullføring av en tally</li>
+            <li>Bruk <strong>Sett Joint</strong> for å rette feil</li>
+            <li>En tally kan ikke fullføres før alle nødvendige data er gyldige</li>
+        </ul>
+
+        <hr>
+    </div>
+
+    <!-- Footer: Full Width -->
+    <img src="../public/footer.png" alt="Footer">
+</body>
+</html>
