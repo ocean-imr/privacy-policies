@@ -1,0 +1,42 @@
+/* ============================================================================
+   ARROW ANNOTATIONS - Positioning for Screenshot Callouts
+   ============================================================================
+   
+   This file controls the vertical positioning of arrow annotations for each 
+   screenshot in the user guides (English and Norwegian).
+   
+   HOW TO USE:
+   -----------
+   Edit the data-arrows attribute directly in the HTML:
+   
+   <div class="flex-image" data-arrows='[
+       {"top": "85px", "label": "Login button", "side": "right"},
+       {"top": "180px", "label": "Password field", "side": "right"},
+       {"top": "320px", "label": "Submit", "side": "left"}
+   ]'>
+       <img src="..." alt="..." class="screenshot">
+   </div>
+   
+   PARAMETERS:
+   -----------
+   - top: Position from top (use "85px" or "45%")
+   - label: Text to display next to arrow
+   - side: "right" or "left" (default is "right")
+   
+   EXAMPLES:
+   ---------
+   {"top": "120px", "label": "Button", "side": "right"}
+   {"top": "45%", "label": "Menu", "side": "left"}
+   
+   TO REMOVE AN ARROW:
+   -------------------
+   Simply delete the arrow object from the JSON array
+   
+   TO ADD MORE ARROWS:
+   -------------------
+   Just add more objects to the array - no CSS changes needed!
+   
+   ============================================================================ */
+
+/* No additional CSS needed - arrows are generated via JavaScript */
+

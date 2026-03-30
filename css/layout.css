@@ -1,0 +1,103 @@
+/* Layout and content structure */
+
+/* Header and Footer - Full Width */
+img[alt="Header"],
+img[alt="Footer"] {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Content Container - Constrained Width */
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 80px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.screenshot {
+    max-height: 400px;
+    object-fit: contain;
+}
+
+/* Flex Layout for Text + Image */
+.flex-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.flex-text {
+    flex: 1;
+}
+
+.flex-image {
+    flex: 0 0 300px;
+    position: relative;
+}
+
+/* Arrow Annotations - Base Structure */
+.arrow-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    pointer-events: none;
+}
+
+.arrow-item {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transform: translateY(-50%);
+    line-height: 1;
+}
+
+/* Right-side arrows (default) */
+.arrow-right {
+    left: 100%;
+    margin-left: -10px;
+}
+
+/* Left-side arrows */
+.arrow-left {
+    right: 100%;
+    margin-right: 10px;
+    justify-content: flex-end;
+}
+
+/* Top arrows (pointing down) */
+.arrow-top {
+    bottom: 100%;
+    margin-bottom: -20px;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+}
+.arrow-icon {
+    font-size: 32px;
+    color: #dc3545;
+    font-weight: bold;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-label {
+    color: #dc3545;
+    font-size: 16px;
+    font-weight: 700;
+    white-space: nowrap;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}

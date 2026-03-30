@@ -1,0 +1,54 @@
+/* Print-specific styles */
+
+@media print {
+    html, body {
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+    }
+    
+    .content-wrapper {
+        padding: 20px 80px;
+        margin: 0 auto;
+    }
+    
+    img[alt="Header"] {
+        margin-bottom: 20px;
+        page-break-after: avoid;
+    }
+    
+    img[alt="Footer"] {
+        margin-top: 30px;
+        margin-bottom: 0;
+        page-break-before: avoid;
+        page-break-after: avoid;
+        page-break-inside: avoid;
+        display: block;
+    }
+    
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    
+    .flex-container {
+        page-break-inside: avoid;
+    }
+    
+    /* Hide arrows in print */
+    .arrow-container {
+        display: none;
+    }
+    
+    /* Ensure no blank pages after footer */
+    @page {
+        margin: 0;
+        size: auto;
+    }
+    
+    /* Last page should end at footer */
+    body::after {
+        content: none;
+    }
+}
