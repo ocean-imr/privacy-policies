@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="/documents/">
+    <!-- <base href="/">   Used for local testing with: 'python -m http.server'-->
     <title>Ocean Tracer - User Guide</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/print.css">
+    <link rel="stylesheet" href="css/arrows.css">
+    <script defer src="css/arrows.js"></script>
 </head>
 <body>
     <!-- Header: Full Width -->
@@ -56,9 +61,15 @@
                     <li><strong>Tally</strong> – Create and manage tallies</li>
                     <li><strong>Pipe Information</strong> – View pipe data</li>
                     <li><strong>Settings</strong> – App configuration</li>
+                    <li><strong>Log Out</strong> – Sign out of the app</li>
                 </ul>
             </div>
-            <div class="flex-image">
+            <div class="flex-image" data-arrows='[
+                {"top": "3.5%", "label": "Log Out", "side": "left"},
+                {"top": "3.5%", "label": "Settings", "side": "right"},
+                {"top": "50%", "label": "Tally", "side": "left"},
+                {"top": "71%", "label": "Pipe Information", "side": "left"}
+            ]'>
                 <img src="Ocean_Tracer/images/user_guide/en/homepage.png" alt="Homepage" class="screenshot">
             </div>
         </div>
@@ -87,7 +98,10 @@
                     <li>🔴 <strong>Red</strong> – Not connected (offline mode)</li>
                 </ul>
             </div>
-            <div class="flex-image">
+            <div class="flex-image" data-arrows='[
+                {"top": "48%", "label": "Change Language", "side": "left"},
+                {"top": "66%", "label": "Sync Data", "side": "left"}
+            ]'>
                 <img src="Ocean_Tracer/images/user_guide/en/settings.png" alt="Settings Menu" class="screenshot">
             </div>
         </div>
@@ -110,7 +124,12 @@
                     <li>Requires active sync (connection must be green)</li>
                 </ul>
             </div>
-            <div class="flex-image">
+            <div class="flex-image" data-arrows='[
+                {"top": "3.5%", "label": "Main Menu", "side": "left"},
+                {"top": "3.5%", "label": "Sync Data", "side": "right"},
+                {"top": "52.5%", "label": "Documentation", "side": "right"},
+                {"top": "90%", "label": "Input Manually", "side": "left"}
+            ]'>
                 <img src="Ocean_Tracer/images/user_guide/en/pipe-info-data.png" alt="Pipe Information" class="screenshot">
             </div>
         </div>
@@ -134,41 +153,58 @@
                     <li>Confirm to create the tally</li>
                 </ol>
             </div>
-            <div class="flex-image">
+            <div class="flex-image" data-arrows='[
+                {"top": "3.5%", "label": "Main Menu", "side": "left"},
+                {"top": "33%", "label": "Booking Reference", "side": "left"},
+                {"top": "43.5%", "label": "Pipes in Row 1", "side": "left"},
+                {"top": "87.5%", "label": "Create Tally", "side": "left"}
+            ]'>
                 <img src="Ocean_Tracer/images/user_guide/en/tally-input.png" alt="Tally Input" class="screenshot">
             </div>
         </div>
 
-        <h3>6.2 Add Pipes to a Row</h3>
-        <ul>
-            <li>Scan pipes to fill the row</li>
-            <li>Continue until the row is complete</li>
-        </ul>
+        <br>
 
-        <h3>6.3 Add a New Row</h3>
-        <p>After completing a row:</p>
-        <ol>
-            <li>Add a new row</li>
-            <li>Set the required row length</li>
-        </ol>
-
-        <h3>6.4 Fix Missing or Incorrect Input</h3>
         <div class="flex-container">
             <div class="flex-text">
+                <h3>6.2 Add Pipes to a Row</h3>
+                <ul>
+                    <li>Scan pipes to fill the row</li>
+                    <li>Continue until the row is complete</li>
+                </ul>
+
+                <h3>6.3 Add a New Row</h3>
+                <p>After completing a row:</p>
+                <ol>
+                    <li>Add a new row</li>
+                    <li>Set the required row length</li>
+                </ol>
+
+                <h3>6.4 Fix Missing or Incorrect Input</h3>
                 <p>If a pipe is missing or misplaced:</p>
                 <ul>
                     <li>Press <strong>"Set Joint"</strong></li>
                     <li>Scan the pipe into the correct position</li>
                 </ul>
             </div>
-            <div class="flex-image">
-                <img src="Ocean_Tracer/images/user_guide/en/set-joint.png" alt="Set Joint" class="screenshot">
+            <div class="flex-image" data-arrows='[
+                {"left": "48.5%", "label": "New/Change Tally", "side": "top"},
+                {"top": "3.5%", "label": "Main Menu", "side": "left"},
+                {"top": "3.5%", "label": "Sync Data", "side": "right"},
+                {"top": "23.5%", "label": "Delete Row", "side": "right"},
+                {"top": "23.5%", "label": "Change Row", "side": "left"},
+                {"top": "82%", "label": "Set Joint", "side": "left"},
+                {"top": "82%", "label": "New Row", "side": "right"}
+            ]'>
+                <img src="Ocean_Tracer/images/user_guide/en/tally.png" alt="Set Joint" class="screenshot">
             </div>
         </div>
+        
+        <br>
 
-        <h3>6.5 Edit Pipe Data</h3>
         <div class="flex-container">
             <div class="flex-text">
+                <h3>6.5 Edit Pipe Data</h3>
                 <p>To change information about a scanned pipe:</p>
                 <ol>
                     <li>Select the pipe in the tally</li>
@@ -177,8 +213,13 @@
                     <li>Save changes</li>
                 </ol>
             </div>
-            <div class="flex-image">
-                <img src="Ocean_Tracer/images/user_guide/en/edit-pipe.png" alt="Edit Pipe" class="screenshot">
+            <div class="flex-image" data-arrows='[
+                {"top": "35%", "label": "Edit Pipe", "side": "right"}
+            ]'>
+                <img src="Ocean_Tracer/images/user_guide/en/tally.png" alt="Edit Pipe" class="screenshot">
+                <!--
+                <img src="Ocean_Tracer/images/user_guide/en/edit-pipe-tally.png" alt="Edit Pipe" class="screenshot">
+                -->
             </div>
         </div>
 
@@ -193,10 +234,15 @@
                     <li>Press <strong>"Complete Tally"</strong></li>
                     <li>Confirm the action</li>
                 </ol>
-                <p><strong>Important:</strong> Ensure the cloud status is <strong>green</strong> before completing to guarantee data is saved to the backend.</p>
+                <p><strong>Important:</strong> if the cloud status is not <strong>green</strong> before completing, data may not appear in the cloud server.</p>
             </div>
-            <div class="flex-image">
-                <img src="Ocean_Tracer/images/user_guide/en/complete-tally.png" alt="Complete Tally" class="screenshot">
+            <div class="flex-image" data-arrows='[
+                {"top": "91%", "label": "Complete Tally", "side": "left"}
+            ]'>
+                <img src="Ocean_Tracer/images/user_guide/en/tally.png" alt="Complete Tally" class="screenshot">
+                <!-- 
+                <img src="Ocean_Tracer/images/user_guide/en/complete-tally.png" alt="Complete Tally" class="screenshot"> 
+                 -->
             </div>
         </div>
 

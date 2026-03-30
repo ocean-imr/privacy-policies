@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="/documents/">
+    <!-- <base href="/">   Used for local testing with: 'python -m http.server'-->
     <title>Ocean Tracer - Brukerveiledning</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/print.css">
+    <link rel="stylesheet" href="css/arrows.css">
+    <script defer src="css/arrows.js"></script>
 </head>
 <body>
     <!-- Header: Full Width -->
@@ -56,9 +61,15 @@
                     <li><strong>Tally</strong> – Opprett og administrer tallier</li>
                     <li><strong>Rørinformasjon</strong> – Vis rørdata</li>
                     <li><strong>Innstillinger</strong> – Appkonfigurasjon</li>
+                    <li><strong>Logg ut</strong> – Logg ut av appen</li>
                 </ul>
             </div>
-            <div class="flex-image">
+            <div class="flex-image" data-arrows='[
+                {"top": "3.5%", "label": "Logg ut", "side": "left"},
+                {"top": "3.5%", "label": "Innstillinger", "side": "right"},
+                {"top": "50%", "label": "Tally", "side": "left"},
+                {"top": "71%", "label": "Rørinformasjon", "side": "left"}
+            ]'>
                 <img src="Ocean_Tracer/images/user_guide/no/homepage.png" alt="Hjemmeside" class="screenshot">
             </div>
         </div>
@@ -87,7 +98,10 @@
                     <li>🔴 <strong>Rød</strong> – Ikke tilkoblet (frakoblet modus)</li>
                 </ul>
             </div>
-            <div class="flex-image">
+            <div class="flex-image" data-arrows='[
+                {"top": "48%", "label": "Endre språk", "side": "left"},
+                {"top": "66%", "label": "Synkroniser data", "side": "left"}
+            ]'>
                 <img src="Ocean_Tracer/images/user_guide/no/settings.png" alt="Innstillingsmeny" class="screenshot">
             </div>
         </div>
@@ -110,7 +124,12 @@
                     <li>Krever aktiv synkronisering (tilkobling må være grønn)</li>
                 </ul>
             </div>
-            <div class="flex-image">
+            <div class="flex-image" data-arrows='[
+                {"top": "3.5%", "label": "Hovedmeny", "side": "left"},
+                {"top": "3.5%", "label": "Synkroniser data", "side": "right"},
+                {"top": "52.5%", "label": "Dokumentasjon", "side": "right"},
+                {"top": "90%", "label": "Skriv inn manuelt", "side": "left"}
+            ]'>
                 <img src="Ocean_Tracer/images/user_guide/no/pipe-info-data.png" alt="Rørinformasjon" class="screenshot">
             </div>
         </div>
@@ -134,41 +153,58 @@
                     <li>Bekreft for å opprette tallyen</li>
                 </ol>
             </div>
-            <div class="flex-image">
+            <div class="flex-image" data-arrows='[
+                {"top": "3.5%", "label": "Hovedmeny", "side": "left"},
+                {"top": "33%", "label": "Bestillingsreferanse", "side": "left"},
+                {"top": "43.5%", "label": "Rør i rad 1", "side": "left"},
+                {"top": "87.5%", "label": "Opprett Tally", "side": "left"}
+            ]'>
                 <img src="Ocean_Tracer/images/user_guide/no/tally-input.png" alt="Tally-inndata" class="screenshot">
             </div>
         </div>
 
-        <h3>6.2 Legg til rør i en rad</h3>
-        <ul>
-            <li>Skann rør for å fylle raden</li>
-            <li>Fortsett til raden er fullstendig</li>
-        </ul>
+        <br>
 
-        <h3>6.3 Legg til en ny rad</h3>
-        <p>Etter fullføring av en rad:</p>
-        <ol>
-            <li>Legg til en ny rad</li>
-            <li>Angi ønsket radlengde</li>
-        </ol>
-
-        <h3>6.4 Fiks manglende eller feil inndata</h3>
         <div class="flex-container">
             <div class="flex-text">
+                <h3>6.2 Legg til rør i en rad</h3>
+                <ul>
+                    <li>Skann rør for å fylle raden</li>
+                    <li>Fortsett til raden er fullstendig</li>
+                </ul>
+
+                <h3>6.3 Legg til en ny rad</h3>
+                <p>Etter fullføring av en rad:</p>
+                <ol>
+                    <li>Legg til en ny rad</li>
+                    <li>Angi ønsket radlengde</li>
+                </ol>
+
+                <h3>6.4 Fiks manglende eller feil inndata</h3>
                 <p>Hvis et rør mangler eller er feilplassert:</p>
                 <ul>
                     <li>Trykk <strong>"Sett Joint"</strong></li>
                     <li>Skann røret inn i riktig posisjon</li>
                 </ul>
             </div>
-            <div class="flex-image">
-                <img src="Ocean_Tracer/images/user_guide/no/pipe-info-empty.png" alt="Sett Joint" class="screenshot">
+            <div class="flex-image" data-arrows='[
+                {"left": "48.5%", "label": "Ny/Endre Tally", "side": "top"},
+                {"top": "3.5%", "label": "Hovedmeny", "side": "left"},
+                {"top": "3.5%", "label": "Synkroniser data", "side": "right"},
+                {"top": "23.5%", "label": "Slett rad", "side": "right"},
+                {"top": "23.5%", "label": "Endre rad", "side": "left"},
+                {"top": "82%", "label": "Sett Joint", "side": "left"},
+                {"top": "82%", "label": "Ny rad", "side": "right"}
+            ]'>
+                <img src="Ocean_Tracer/images/user_guide/no/tally.png" alt="Sett Joint" class="screenshot">
             </div>
         </div>
+        
+        <br>
 
-        <h3>6.5 Rediger rørdata</h3>
         <div class="flex-container">
             <div class="flex-text">
+                <h3>6.5 Rediger rørdata</h3>
                 <p>For å endre informasjon om et skannet rør:</p>
                 <ol>
                     <li>Velg røret i tallyen</li>
@@ -177,8 +213,13 @@
                     <li>Lagre endringer</li>
                 </ol>
             </div>
-            <div class="flex-image">
-                <img src="Ocean_Tracer/images/user_guide/no/pipe-info-data.png" alt="Rediger rør" class="screenshot">
+            <div class="flex-image" data-arrows='[
+                {"top": "35%", "label": "Rediger rør", "side": "right"}
+            ]'>
+                <img src="Ocean_Tracer/images/user_guide/no/tally.png" alt="Rediger rør" class="screenshot">
+                <!--
+                <img src="Ocean_Tracer/images/user_guide/no/edit-pipe-tally.png" alt="Rediger rør" class="screenshot">
+                -->
             </div>
         </div>
 
@@ -193,10 +234,15 @@
                     <li>Trykk <strong>"Fullfør Tally"</strong></li>
                     <li>Bekreft handlingen</li>
                 </ol>
-                <p><strong>Viktig:</strong> Sørg for at skystatusen er <strong>grønn</strong> før fullføring for å garantere at data lagres på backend.</p>
+                <p><strong>Viktig:</strong> Hvis skystatusen ikke er <strong>grønn</strong> før fullføring, kan data muligens ikke vises i skyserveren.</p>
             </div>
-            <div class="flex-image">
-                <img src="Ocean_Tracer/images/user_guide/no/complete-tally.png" alt="Fullfør Tally" class="screenshot">
+            <div class="flex-image" data-arrows='[
+                {"top": "91%", "label": "Fullfør Tally", "side": "left"}
+            ]'>
+                <img src="Ocean_Tracer/images/user_guide/no/tally.png" alt="Fullfør Tally" class="screenshot">
+                <!-- 
+                <img src="Ocean_Tracer/images/user_guide/no/complete-tally.png" alt="Fullfør Tally" class="screenshot"> 
+                -->
             </div>
         </div>
 
